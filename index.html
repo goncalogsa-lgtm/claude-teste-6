@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>outstate — Drop 01</title>
+  <meta name="description" content="outstate Drop 01. Heavyweight tees and jerseys, cut for everyday.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Global navigation -->
+  <header class="global-nav">
+    <nav class="global-nav__inner" aria-label="Global">
+      <a href="#top" class="wordmark" aria-label="outstate home">outstate</a>
+      <ul class="global-nav__links">
+        <li><a href="#highlights">New</a></li>
+        <li><a href="#showcase">Tees</a></li>
+        <li><a href="#story">Story</a></li>
+        <li><a href="#shop">Shop</a></li>
+      </ul>
+      <a href="#shop" class="bag" aria-label="Bag">
+        <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M6 8h12l-1 12H7L6 8Zm3 0V6a3 3 0 0 1 6 0v2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+        <span class="bag__count" data-bag-count>0</span>
+      </a>
+    </nav>
+  </header>
+
+  <!-- Product local navigation -->
+  <div class="local-nav" data-local-nav>
+    <div class="local-nav__inner">
+      <span class="local-nav__title">Drop 01</span>
+      <div class="local-nav__actions">
+        <a href="#showcase" class="pill pill--outline">Explore</a>
+        <a href="#shop" class="pill pill--blue">Shop</a>
+      </div>
+    </div>
+  </div>
+
+  <main id="top">
+
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-title">
+      <p class="hero__kicker reveal-hero" style="--d:0">outstate Drop 01</p>
+      <h1 id="hero-title" class="hero__title">
+        <span class="line"><span class="reveal-hero" style="--d:1">Out of state.</span></span>
+        <span class="line"><span class="reveal-hero" style="--d:2">Never out of place.</span></span>
+      </h1>
+      <p class="hero__sub reveal-hero" style="--d:3">Heavyweight cotton, boxy cuts, prints that hold up. Available now.</p>
+      <div class="hero__cta reveal-hero" style="--d:4">
+        <a href="#shop" class="pill pill--blue pill--lg">Shop the drop</a>
+        <a href="#story" class="text-link">Learn more <span aria-hidden="true">›</span></a>
+      </div>
+
+      <div class="hero__stage" data-hero-stage>
+        <img class="hero__ghost hero__ghost--l" src="assets/4.png" alt="" aria-hidden="true">
+        <img class="hero__ghost hero__ghost--r" src="assets/3.png" alt="" aria-hidden="true">
+        <img class="hero__product" src="assets/1.png" alt="Black graphic tee from outstate Drop 01" data-hero-product>
+        <div class="callout" data-callout>
+          <div>
+            <p class="callout__price">From $48</p>
+            <p class="callout__note">Free shipping on every order.</p>
+          </div>
+          <a href="#shop" class="pill pill--blue">Buy</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section anchor nav -->
+    <nav class="anchor-nav" aria-label="In this page">
+      <a href="#highlights">Highlights</a>
+      <a href="#showcase">The tees</a>
+      <a href="#story">Fabric</a>
+      <a href="#shop">Shop</a>
+    </nav>
+
+    <!-- Highlights carousel -->
+    <section class="highlights" id="highlights" aria-labelledby="hl-title">
+      <div class="container highlights__head">
+        <h2 id="hl-title" class="section-title reveal">Get the highlights.</h2>
+        <a href="#shop" class="text-link reveal">Shop all tees <span aria-hidden="true">›</span></a>
+      </div>
+
+      <div class="carousel" data-carousel>
+        <div class="carousel__track" data-track>
+          <article class="slide" data-slide>
+            <p class="slide__label">New</p>
+            <h3 class="slide__title">Money talks.<br>Ours whispers.</h3>
+            <img src="assets/1.png" alt="Black tee with folded-bill graphic" loading="lazy">
+          </article>
+          <article class="slide slide--warm" data-slide>
+            <p class="slide__label">Back print</p>
+            <h3 class="slide__title">Said the quiet<br>part loud.</h3>
+            <img src="assets/2.png" alt="White oversized tee with red back print" loading="lazy">
+          </article>
+          <article class="slide" data-slide>
+            <p class="slide__label">Mesh</p>
+            <h3 class="slide__title">Game-day mesh.<br>Every day.</h3>
+            <img src="assets/3.png" alt="Black mesh jersey with number 94" loading="lazy">
+          </article>
+          <article class="slide" data-slide>
+            <p class="slide__label">Colorway</p>
+            <h3 class="slide__title">Green that<br>goes with all.</h3>
+            <img src="assets/4.png" alt="Green tee with silver script back print" loading="lazy">
+          </article>
+        </div>
+      </div>
+
+      <div class="playback" role="group" aria-label="Carousel controls">
+        <div class="playback__dots" data-dots></div>
+        <button class="playback__btn" type="button" data-toggle aria-label="Pause">
+          <svg class="icon-pause" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><rect x="3.5" y="2.5" width="3" height="11" rx="1"/><rect x="9.5" y="2.5" width="3" height="11" rx="1"/></svg>
+          <svg class="icon-play" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M4 2.8v10.4c0 .6.7 1 1.2.7l8.3-5.2c.5-.3.5-1 0-1.4L5.2 2.1C4.7 1.8 4 2.2 4 2.8Z"/></svg>
+        </button>
+      </div>
+    </section>
+
+    <!-- Pinned scroll showcase -->
+    <section class="showcase" id="showcase" aria-labelledby="sc-title" data-showcase>
+      <div class="showcase__sticky">
+        <div class="container showcase__grid">
+          <div class="showcase__copy">
+            <p class="kicker">The lineup</p>
+            <h2 id="sc-title" class="sr-only">The lineup</h2>
+            <div class="showcase__texts">
+              <div class="showcase__text is-active" data-step-text>
+                <h3 class="feature-title">The Bill Fold Tee.</h3>
+                <p class="body">Jet black, 240gsm cotton, and a print you'll want to stare at. A classic fit that keeps its shape wash after wash.</p>
+                <p class="showcase__price">$48</p>
+              </div>
+              <div class="showcase__text" data-step-text>
+                <h3 class="feature-title">The After Hours Tee.</h3>
+                <p class="body">Oversized, dropped shoulders, and a back print that starts a conversation. Clean white with a red you won't miss.</p>
+                <p class="showcase__price">$54</p>
+              </div>
+              <div class="showcase__text" data-step-text>
+                <h3 class="feature-title">The 94 Mesh Jersey.</h3>
+                <p class="body">Breathable athletic mesh with tonal numbering. Built for the stands, worn everywhere else.</p>
+                <p class="showcase__price">$72</p>
+              </div>
+              <div class="showcase__text" data-step-text>
+                <h3 class="feature-title">The Tape Script Tee.</h3>
+                <p class="body">Forest green with a silver script that looks hand-taped. Easy to style, hard to forget.</p>
+                <p class="showcase__price">$48</p>
+              </div>
+            </div>
+            <div class="progress" aria-hidden="true"><span data-progress></span></div>
+          </div>
+
+          <div class="showcase__visual" aria-hidden="true">
+            <div class="showcase__disc" data-disc></div>
+            <img class="showcase__img is-active" src="assets/1.png" alt="" data-step-img>
+            <img class="showcase__img" src="assets/2.png" alt="" data-step-img>
+            <img class="showcase__img" src="assets/3.png" alt="" data-step-img>
+            <img class="showcase__img" src="assets/4.png" alt="" data-step-img>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Editorial block -->
+    <section class="editorial" id="story" aria-labelledby="ed-title">
+      <div class="container editorial__grid">
+        <div class="editorial__copy">
+          <p class="kicker reveal">Fabric</p>
+          <h2 id="ed-title" class="display reveal">Heavy cotton.<br>Light on the<br>shoulders.</h2>
+          <p class="body reveal">Every outstate tee starts with 240gsm combed cotton, garment-washed so it feels broken-in from day one. Ribbed collars stay flat. Seams stay put. Prints are screen-pressed to last as long as the shirt does.</p>
+          <ul class="stats">
+            <li class="reveal"><span class="stat__num" data-count="240">0</span><span class="stat__unit">gsm</span><span class="stat__label">combed cotton</span></li>
+            <li class="reveal"><span class="stat__num" data-count="100">0</span><span class="stat__unit">%</span><span class="stat__label">pre-shrunk</span></li>
+            <li class="reveal"><span class="stat__num" data-count="4">0</span><span class="stat__unit">styles</span><span class="stat__label">in Drop 01</span></li>
+          </ul>
+        </div>
+        <div class="editorial__media" data-parallax>
+          <img src="assets/2.png" alt="Back of the After Hours Tee" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- Marquee -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>outstate</span><span>Drop 01</span><span>Heavyweight</span><span>Boxy fit</span><span>Screen printed</span>
+        <span>outstate</span><span>Drop 01</span><span>Heavyweight</span><span>Boxy fit</span><span>Screen printed</span>
+      </div>
+    </div>
+
+    <!-- Shop grid -->
+    <section class="shop" id="shop" aria-labelledby="shop-title">
+      <div class="container">
+        <div class="shop__head">
+          <h2 id="shop-title" class="section-title reveal">Shop Drop 01.</h2>
+          <p class="body muted reveal">Limited runs. When they're gone, they're gone.</p>
+        </div>
+        <div class="shop__grid">
+          <article class="card reveal" data-tilt>
+            <p class="launch">New</p>
+            <h3 class="card__title">Bill Fold Tee</h3>
+            <p class="card__meta">Black · Classic fit</p>
+            <div class="card__media"><img src="assets/1.png" alt="Bill Fold Tee" loading="lazy"></div>
+            <div class="card__foot"><span class="card__price">$48</span><button class="pill pill--blue" type="button" data-add>Add to bag</button></div>
+          </article>
+          <article class="card reveal" data-tilt>
+            <p class="launch">New</p>
+            <h3 class="card__title">After Hours Tee</h3>
+            <p class="card__meta">White · Oversized</p>
+            <div class="card__media"><img src="assets/2.png" alt="After Hours Tee" loading="lazy"></div>
+            <div class="card__foot"><span class="card__price">$54</span><button class="pill pill--blue" type="button" data-add>Add to bag</button></div>
+          </article>
+          <article class="card reveal" data-tilt>
+            <p class="launch">Limited</p>
+            <h3 class="card__title">94 Mesh Jersey</h3>
+            <p class="card__meta">Black · Relaxed</p>
+            <div class="card__media"><img src="assets/3.png" alt="94 Mesh Jersey" loading="lazy"></div>
+            <div class="card__foot"><span class="card__price">$72</span><button class="pill pill--blue" type="button" data-add>Add to bag</button></div>
+          </article>
+          <article class="card reveal" data-tilt>
+            <p class="launch">New</p>
+            <h3 class="card__title">Tape Script Tee</h3>
+            <p class="card__meta">Forest green · Classic fit</p>
+            <div class="card__media"><img src="assets/4.png" alt="Tape Script Tee" loading="lazy"></div>
+            <div class="card__foot"><span class="card__price">$48</span><button class="pill pill--blue" type="button" data-add>Add to bag</button></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Closing -->
+    <section class="closing" aria-labelledby="close-title">
+      <h2 id="close-title" class="display reveal">Wear it out.</h2>
+      <p class="body muted reveal">Join the list for early access to Drop 02.</p>
+      <form class="signup reveal" data-signup>
+        <label class="sr-only" for="email">Email address</label>
+        <input id="email" type="email" placeholder="Email address" required>
+        <button class="pill pill--blue" type="submit">Notify me</button>
+      </form>
+      <p class="signup__msg" data-signup-msg role="status"></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__note">Free shipping and returns on all orders. Prices in USD.</p>
+      <div class="footer__row">
+        <span>Copyright © <span data-year>2026</span> outstate. All rights reserved.</span>
+        <nav class="footer__links" aria-label="Footer">
+          <a href="#">Privacy</a><a href="#">Terms</a><a href="#">Shipping</a><a href="#">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" data-toast role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
